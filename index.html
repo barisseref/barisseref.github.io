@@ -60,6 +60,7 @@
             <li class="nav-item"><a class="nav-link" href="#education">Eğitimim</a></li>
             <li class="nav-item"><a class="nav-link" href="#certifications">Örnekler</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">İletişim</a></li>
+             <li class="nav-item"><a class="nav-link" href="#Soru"> <u> Soru-Cevap</u></a></li>
           </ul>
         </div>
       </div>
@@ -604,6 +605,60 @@
   <script src="./scripts/aos.min.js?ver=1.2.0"></script>
   <script src="./scripts/main.js?ver=1.2.0"></script>
   <script src="./scripts/age.js?ver=1.2.0"></script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.querySelector('b'); // <b>X</b>
+    const toggleChatbox = document.querySelector('u'); // <u> Soru-Cevap</u>
+    const chatbox = document.querySelector('.chatbox');
+    const header = document.querySelector('.header');
+    const chatArea = document.querySelector('.chat-area');
+    const messageBot = document.querySelector('.message.bot');
+    const inputArea = document.querySelector('.input-area');
+    let isClosed = false;
+    
+    toggleButton.addEventListener('click', function () {
+        if (isClosed) {
+            header.style.display = 'block';
+            chatArea.style.display = 'block';
+            messageBot.style.display = 'block';
+            inputArea.style.display = 'block';
+            isClosed = false;
+        } else {
+            header.style.display = 'none';
+            chatArea.style.display = 'none';
+            messageBot.style.display = 'none';
+            inputArea.style.display = 'none';
+            isClosed = true;
+        }
+    });
+    
+    toggleChatbox.addEventListener('click', function () {
+        if (isClosed) {
+            header.style.display = 'block';
+            chatArea.style.display = 'block';
+            messageBot.style.display = 'block';
+            inputArea.style.display = 'block';
+            isClosed = false;
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+  
 </body>
 
 </html>
